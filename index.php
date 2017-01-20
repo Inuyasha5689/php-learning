@@ -1,5 +1,9 @@
 <?php
 
-    echo 'Hello World';
+    $greeting = 'Hello';
+
+    $name = 'Drake Scott';
+
+    echo "{$greeting}, {$name}";
 
  ?>
