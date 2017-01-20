@@ -1,18 +1,12 @@
 <?php
 
-$person = [
-    31, 'brown'
-];
+require 'functions.php';
 
-$task = [
-    'title' => 'Finish homework',
-    'due' => 'today',
-    'assigned_to' => 'Drake',
-    'completed' => true
-];
-/* associative array */
+$animals = ['dog', 'cat'];
 
+allowance(19);
 
+dd($animals);
 
 require 'index.view.php';
 ?>
