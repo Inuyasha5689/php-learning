@@ -8,39 +8,18 @@
 
     <title>Document</title>
 
-    <style>
-        header {
-            background: #e3e3e3;
-
-            padding: 2em;
-
-            text-align: center;
-        }
-    </style>
-
 </head>
 
 <body>
 
-
-    <header>
-        <ul>
+    <ul>
+        <?php foreach ($person as $feature => $val) : ?>
             <li>
-                <?php
-                    foreach ($names as $name) {
-                        echo "<li>$name</li>";
-                    }
-                 ?>
-
-                 <?php foreach ($names as $name) : ?>
-                        <li>
-                            <?= $name; ?>
-                        </li>
-                     <?php endforeach; ?>
-
+                <strong><?= $feature; ?></strong>
+                <?=$val; ?>
             </li>
-        </ul>
-    </header>
+        <?php endforeach; ?>
+    </ul>
 
 </body>
 
