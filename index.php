@@ -1,12 +1,41 @@
 <?php
 
-require 'functions.php';
+/**
+ * Todo Application
+ *
+ *Todo, Comment, User
+ */
 
-$animals = ['dog', 'cat'];
+class Task
+{
+    protected $description;
 
-allowance(19);
+    protected $completed = false;
 
-dd($animals);
+    public function __construct($description){
+        //Automatically triggered on instantiation
+        $this->description = $description;
+    }
+
+    public function complete(){
+        $this->completed = true;
+    }
+
+    public function isComplete(){
+        return $this->completed;
+    }
+
+     public function description()
+    {
+        return $this->description;
+    }
+}
+
+$tasks = [
+    new Task('Go to the store'),
+    new Task('Finish my homework'),
+    new Task('Clean my room')
+];
 
 require 'index.view.php';
 ?>
