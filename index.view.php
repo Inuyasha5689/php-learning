@@ -12,13 +12,21 @@
 
 <body>
 
+    <h1>Task For The Day</h1>
+
     <ul>
-        <?php foreach ($person as $feature => $val) : ?>
-            <li>
-                <strong><?= $feature; ?></strong>
-                <?=$val; ?>
-            </li>
-        <?php endforeach; ?>
+        <li>
+            <strong>Name: </strong> <?= $task['title']; ?>
+        </li>
+        <li>
+            <strong>Due Date: </strong> <?= $task['due']; ?>
+        </li>
+        <li>
+            <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
+        </li>
+        <li>
+            <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incompletee'; ?>
+        </li>
     </ul>
 
 </body>

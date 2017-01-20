@@ -4,22 +4,15 @@ $person = [
     31, 'brown'
 ];
 
-$person = [
-    'age' => 19,
-    'hair' => 'brown',
-    'career' => 'Web Developer'
+$task = [
+    'title' => 'Finish homework',
+    'due' => 'today',
+    'assigned_to' => 'Drake',
+    'completed' => true
 ];
 /* associative array */
 
-$person['name'] = 'Drake';
 
-unset($person['age']);
-
-echo '<pre>';
-
-die(var_dump($person));
-
-echo '</pre>';
 
 require 'index.view.php';
 ?>
