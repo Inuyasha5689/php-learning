@@ -32,10 +32,12 @@ class Task
 }
 
 $tasks = [
-    new Task('Go to the store'),
-    new Task('Finish my homework'),
-    new Task('Clean my room')
+    new Task('Go to the store'), // 0
+    new Task('Finish my homework'), //1
+    new Task('Clean my room') //2
 ];
+
+$tasks[0] -> complete();
 
 require 'index.view.php';
 ?>
