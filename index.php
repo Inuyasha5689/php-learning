@@ -8,7 +8,7 @@
 
 class Task
 {
-    protected $description;
+    public $description;
 
     public $completed = false;
 

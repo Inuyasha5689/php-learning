@@ -15,14 +15,12 @@
         <?php foreach ($tasks as $task) : ?>
             <li>
                 <?php if ($task->completed) : ?>
-                    <strike>
+                    <strike><?= $task->description; ?></strike>
+                <?php else: ?>
+
+                    <?= $task->description(); ?>
+
                 <?php endif; ?>
-
-                <?= $task->description(); ?>
-
-                <?php if ($task->completed) : ?>
-                    </strike>
-                <?php endif; ?>  
             </li>
             <?php endforeach; ?>
     </ul>
