@@ -15,6 +15,7 @@
         <?php foreach ($tasks as $task) : ?>
             <li>
                 <?php if ($task->completed) : ?>
+<<<<<<< HEAD
                     <strike>
                 <?php endif; ?>
 
@@ -23,6 +24,14 @@
                 <?php if ($task->completed) : ?>
                     </strike>
                 <?php endif; ?>  
+=======
+                    <strike><?= $task->description; ?></strike>
+                <?php else: ?>
+
+                    <?= $task->description(); ?>
+
+                <?php endif; ?>
+>>>>>>> decdff8fdc30ab0d33d452ad07d18bc5e0b3ef23
             </li>
             <?php endforeach; ?>
     </ul>
